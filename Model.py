@@ -10,6 +10,8 @@ from sklearn.metrics import ConfusionMatrixDisplay
 
 
 df = pd.read_csv('D:\Major_Project\Dataset\clean_dataset.csv')
+df= df.drop('ZipCode', axis = 1)
+df['Income'] = df['Income']*132
 
 X = df.drop('Approved', axis = 1)
 y = df['Approved']
