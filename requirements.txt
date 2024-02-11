@@ -1,0 +1,5 @@
+python
+flask
+numot
+pandas
+joblib
